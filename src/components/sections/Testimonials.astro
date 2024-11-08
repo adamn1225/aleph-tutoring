@@ -1,0 +1,24 @@
+---
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import { testimonials } from "../../utils/data";
+---
+
+<Container>
+    <h2>What Parents are Saying</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {
+            testimonials.map((testimonial) => (
+                <div class="p-5 sm:p-6 lg:p-8 rounded-3xl border border-box-border bg-box-bg shadow-lg shadow-box-shadow relative overflow-hidden">
+                    <div class="rounded-xl bg-gray-300 dark:bg-gray-950 p-3 text-heading-1 w-max relative">
+                        <slot name="icon" />
+                    </div>
+                    <h2 class="md:text-xl font-semibold text-heading-2 mt-6 mb-4">
+                        {testimonial.title}
+                    </h2>
+                    <Paragraph>{testimonial.description}</Paragraph>
+                </div>
+            ))
+        }
+    </div>
+</Container>
