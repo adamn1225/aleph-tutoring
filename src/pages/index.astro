@@ -1,23 +1,20 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/sections/Hero.astro';
-import Services from '../components/sections/Services.astro';
-import AboutUs from '../components/sections/AboutUs.astro';
-import Features from '../components/sections/Features.astro';
-import CTA from '../components/sections/CTA.astro';
-import Testimonials from '../components/sections/Testimonials.astro';
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/sections/Hero.astro";
+import Services from "../components/sections/Services.astro";
+import AboutUs from "../components/sections/AboutUs.astro";
+import Features from "../components/sections/Features.astro";
+import CTA from "../components/sections/CTA.astro";
+import Testimonials from "../components/sections/Testimonials.astro";
 ---
 
-<Layout title="Welcome to the the empty shell">
-	<main class="h-screen w-screen flex justify-center items-center">
-		<h1 class="text-zinc-900 font-semibold tracking-wider text-5xl">Welcome to the void that will never be filled... </h1>
+<Layout title="Welcome to AgenceX">
+	<main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
+		<Hero />
+		<Services />
+		<AboutUs />
+		<Testimonials />
+		<Features />
+		<CTA />
 	</main>
-	<!-- <main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
-		<Hero/>
-		<Services/>
-		<AboutUs/>
-		<Testimonials/>
-		<Features/>
-		<CTA/>
-	</main> -->
 </Layout>
