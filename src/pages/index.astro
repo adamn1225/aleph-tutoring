@@ -6,83 +6,15 @@ import AboutUs from "../components/sections/AboutUs.astro";
 import Features from "../components/sections/Features.astro";
 import CTA from "../components/sections/CTA.astro";
 import Testimonials from "../components/sections/Testimonials.astro";
-import { Heart } from "lucide-react";
 ---
 
-<main
-	class="flex flex-col items-center justify-center overflow-hidden h-screen font-semibold text-xl text-pink-600 mx-20 text-center"
->
-	<h1 class="text-3xl font-bold italic mb-6 unerline">
-		Welcome to Aleph HomeSchool & Tutoring!
-	</h1>
-	<p>
-		I'm a lying piece of shit that lied to her husband for over a year - I
-		bullied him, verbally abused him although he gave me everything he
-		could, its never enough to fill the bottemless void of greed.
-	</p>
-	<br />
-	<p>
-		I lie on evaluations also to make sure I get the business - I really
-		love money
-	</p><br />
-	<p>
-		I might have my masters degree, but couldn't even get through alegebra I
-		in COLLEGE
-	</p><br />
-	<p>
-		I convinced my family to plot with me, and lie to my husband about my
-		income and buying a house - I told him we were renting lol
-	</p>
-	<img
-		src="/public/images/impathetic.png"
-		alt="This is how I think of my husband"
-		class="shadow-md h-auto w-2/3"
-	/>
-	<br />
-	<p>
-		he paid the majority of the bills while I got to save up to make the
-		purchase
-	</p><br />
-	<p>
-		I'm sure you can tell by now - but my husband made my site, without
-		hesitation like a sucker, made my gmb, formed my llc - check it out on
-		sunbiz
-	</p>
-	<br />
-	<a
-		class="text-blue-600 underline"
-		href="https://search.sunbiz.org/Inquiry/corporationsearch/SearchResultDetail?inquirytype=EntityName&directionType=ForwardList&searchNameOrder=ALEPHHOMESCHOOLTUTORING%20L190002182350&aggregateId=flal-l19000218235-54df0a81-dce6-4688-bc00-032dd7aa1f41&searchTerm=ALEPH%20BEIT%2C%20LLC&listNameOrder=ALEPHENT%20L200003930610"
-	>
-		Aleph HomeSchool SunBiz</a
-	>
-
-	<br />
-	<a
-		class="text-blue-600 underline"
-		href="https://search.sunbiz.org/Inquiry/CorporationSearch/ConvertTiffToPDF?storagePath=COR%5C2019%5C0905%5C10814771.tif&documentNumber=L19000218235"
-	>
-		Here's the pdf</a
-	>
-	<p>
-		He helped me create my business bank account - I was just going to go
-		tutoring like I used to in highschool - but his idea was better - thanks
-		for the idea idiot lmao
-	</p>
-
-	<p>
-		I talk about how much of a loser, less of a man he is, I remind him
-		everyday - 120k a year? So what? I need more... MOOREEEEEE
-	</p>
-	<br />
-	<p>
-		I got into over 60k debt without my husbands knowledge falling for a
-		scam - I'm so smart - because he's going to help me take care of it,
-		he's going to pay it for me =)
-	</p>
-	<br />
-	<p>
-		I renamed Eyals contact on my phone to bali <Heart /> I also made a dating
-		profile on seekingarrangements .com - hehe - what else am I capabale of?
-	</p>
-</main>
->
+<Layout title="Welcome to AgenceX">
+	<main class="flex flex-col gap-y-20 md:gap-y-32 overflow-hidden">
+		<Hero />
+		<Services />
+		<AboutUs />
+		<Testimonials />
+		<Features />
+		<CTA />
+	</main>
+</Layout>
